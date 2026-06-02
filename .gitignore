@@ -1,0 +1,22 @@
+# Alignment files
+*.bam
+*.bai
+
+#Variant files
+*.vcf
+*.vcf.gz
+*.tbi
+
+#Fastq files
+*.fastq
+*.fastq.gz
+
+#Temporary files
+*.tmp
+*.log
+
+#Python
+__pycache__/
+
+#OS files
+.DS_Store
