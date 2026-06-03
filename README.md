@@ -1,4 +1,4 @@
-# Germline VariantAnalysis Case Study
+# Germline Variant Analysis Case Study
 
 ## Objective
 
