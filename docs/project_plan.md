@@ -6,13 +6,13 @@ Which germline variants can be idetified from a public human sequencing sample a
 
 ## Objectives 
 
-1. Obtain public sequencing data.
-2. Perform sequencing quality control.
-3. Align reads to a reference genome.
-4. Call germline variants
-5. Filter low-confidence variants.
-6. Annotate variants.
-7. Interpret biologically relevant findings.
+1. Obtain public germline variant data
+2. Explore VCF structure
+3. Filter variants
+4. Annotate variants
+5. Summarize variant statistics
+6. Interpret biologically relevant findings
+7. Produce a reproducible report
 
 ## Dataset 
 
