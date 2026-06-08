@@ -37,7 +37,7 @@ Which germline variants are present in the selected individual, and what biologi
 ## Deliverables
 
 - Reproducible workflow
-- Anootated variant dataset
+- Annotated variant dataset
 - Summary statistics
 - Final report
 
