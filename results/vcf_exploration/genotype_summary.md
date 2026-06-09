@@ -9,11 +9,12 @@ Chromosome 22
 
 ## Genotype Counts
 
- Genotype  Count 
-  0|0    1,049,372 
-  0|1    14,101
-  1|0    15,728
-  1|1    23,812
+| Genotype | Count |
+|----------|------:| 
+| `0|0` | 1,049,372 | 
+| `0|1` | 14,101 |
+| `1|0` | 15,728 |
+| `1|1` | 23,812 |
 
 ## Derived Statistics
 
