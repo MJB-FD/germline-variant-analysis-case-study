@@ -1,3 +1,7 @@
+# VCF index files
+*.csi
+*.tbi
+
 # Alignment files
 *.bam
 *.bai
