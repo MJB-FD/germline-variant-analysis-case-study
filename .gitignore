@@ -1,3 +1,10 @@
+#Raw and large biological data
+data/
+results/
+
+#Temporary genomic formats
+*.bed
+
 # VCF index files
 *.csi
 *.tbi
