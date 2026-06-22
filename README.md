@@ -1,51 +1,117 @@
-# Germline Variant Analysis Case Study (1000 Genomes – chr22)
+# Germline Variant Analysis Pipeline (1000 Genomes Project)
 
 ## Overview
 
-This project analyzes germline genetic variation in a single human sample (HG00096) using chromosome 22 data from the 1000 Genomes Project.
+This project analyzes germline variants from chromosome 22 of sample HG00096 from the 1000 Genomes Project.
 
-Instead of performing read alignment or variant calling from raw FASTQ files, this project focuses on **VCF-level population genetics analysis**.
+The workflow uses Bash, bcftools, bedtools, and genomic annotation resources to:
 
-The goal is to move from a population-scale variant dataset to individual-level genotype interpretation in a reproducible way.
-
----
-
-## Biological Questions
-
-This project answers:
-
-1. How many variant sites exist on chromosome 22 in the 1000 Genomes cohort?
-2. Which of these variants are present in individual HG00096?
-3. How are genotypes distributed across reference, heterozygous, and homozygous alternate states?
-4. What is the difference between cohort variation and individual variation?
+* Explore a population-scale VCF
+* Extract a single sample
+* Characterize genotype distributions
+* Filter non-reference variants
+* Annotate variants against genes and exons
+* Generate reproducible summary statistics
 
 ---
 
 ## Dataset
 
-- Source: 1000 Genomes Project Phase 3
-- Chromosome: 22
-- Samples: 2,504 individuals
-- Reference genome: GRCh37 / hg19
-- Format: VCF (variant call format)
+Source: 1000 Genomes Project
+
+Sample analyzed: HG00096
+
+Chromosome: 22
+
+VCF records analyzed: 1,097,199
 
 ---
 
-## Workflow Summary
+## Tools
 
-The analysis follows this sequence:
+* Bash
+* bcftools
+* bedtools
+* Git
+* GitHub
 
-1. Explore cohort VCF structure
-2. Extract individual HG00096
-3. Classify genotypes across all variant sites
-4. Identify non-reference variant positions
-5. Summarize variant statistics
+---
+
+## Workflow
+
+VCF Download
+
+↓
+
+Sample Extraction
+
+↓
+
+Genotype Distribution Analysis
+
+↓
+
+Non-reference Variant Filtering
+
+↓
+
+Gene Annotation
+
+↓
+
+Exon Annotation
+
+↓
+
+Summary Report Generation
+
+---
+
+## Results
+
+| Metric                           |     Value |
+| -------------------------------- | --------: |
+| Cohort variant sites             | 1,097,199 |
+| Non-reference variants (HG00096) |    53,113 |
+| Genic variants                   |    32,401 |
+| Exonic variants                  |     3,485 |
+
+### Interpretation
+
+Most non-reference variants occur outside coding exons, which is consistent with the predominance of non-coding DNA in the human genome.
+
+---
+
+## Repository Structure
+
+scripts/
+
+* download_chr22_vcf.sh
+* extract_sample.sh
+* genotype_distribution.sh
+* non_reference_variants.sh
+* annotate_variants.sh
+* run_all.sh
+
+results/
+
+* vcf_exploration/
+* annotation/
+
+docs/
+
+* project documentation
 
 ---
 
 ## Reproducibility
 
-To reproduce the entire analysis:
+Run the complete workflow:
 
-```bash
 bash scripts/run_all.sh
+
+---
+
+## Author
+
+Bioinformatics portfolio project focused on germline variant analysis and genomic annotation.
